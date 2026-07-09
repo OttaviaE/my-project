@@ -17,16 +17,22 @@ format:
     dark: superhero 
 self-contained: true
 lang: en
+bibliography: biblio.bib
+reference-location: margin
+citation-location: margin
 ---
 
 # Presentation
 
-This is Ottavia's website!
+This is Ottavia's website [@ggplot]!
+
+Also mirt is a nice package [@mirt]
 
 And this is a turtle 
 
-![A turtle](img/tartaruga.jpg){#fig-turtle}
-@fig-turtle presents a turtle
+![a turtle](img/tartaruga.jpg){#fig-tarta}
+
+@fig-tarta presents a turtle
 
 [Link to something](https://www.unipd.it/)
 
@@ -41,6 +47,31 @@ $$z = \dfrac{z - \mu}{\sigma}$${#eq-myequation}
 
 In @eq-myequation, we wrote down an equation
 
+@eq-ctt shows the basic equation in classic test theory.
+
+:::{.column-margin}
+
+$$X = V+ E$${#eq-ctt}
+:::
+
+
+
 #### My paragraph 
 
 This is a paragraph
+
+:::{.grid}
+
+:::{.g-col-4}
+This is my first column
+:::
+
+:::{.g-col-4}
+This is my second column
+:::
+
+:::{.g-col-4}
+This is my third column
+:::
+
+:::

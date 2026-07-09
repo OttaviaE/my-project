@@ -6,6 +6,10 @@ format:
    toc: true
    toc-location: left
    number-sections: true
+   code-tools: 
+     source: true
+     toggle: false
+     caption: Show the code for this document
    grid:
     sidebar-width: 200px
     body-width: 900px
@@ -21,7 +25,17 @@ reference-location: margin
 citation-location: margin
 execute: 
   echo: false
+editor_options: 
+  chunk_output_type: console
 ---
+
+```{r}
+#| echo: true
+#| error: true
+mean(y)
+```
+
+
 
 @lst-default presents the default settings of the code chunks
 
@@ -75,5 +89,21 @@ plot( pnorm(x),qnorm( pnorm(x)), type = "l", cex = 2, lwd = 3)
 
 ```
 
+@tbl-tab
+
+```{r}
+#| tbl-cap: This is my firsat table
+#| label: tbl-tab
+library(knitr)
+kable(head(cars))
+```
+
+```{r}
+#| fig-column: margin
+#| tbl-cap: The table 
+#| fig-cap: The plot
+kable(head(cars))
+plot(cars$speed, cars$dist)
+```
 
 

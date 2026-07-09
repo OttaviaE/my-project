@@ -16,20 +16,30 @@ format:
     light: minty
     dark: superhero 
 self-contained: true
-lang: it
+lang: en
 ---
 
 # Presentation
 
 This is Ottavia's website!
 
+And this is a turtle 
+
+![A turtle](img/tartaruga.jpg){#fig-turtle}
+@fig-turtle presents a turtle
+
+[Link to something](https://www.unipd.it/)
+
 ## Sub presentation
 
-Sub section 
+Sub section $X = V + E$
+
+$$z = \dfrac{z - \mu}{\sigma}$${#eq-myequation}
+
 
 ### Sub sub section 
 
-Another suyb sub sub section
+In @eq-myequation, we wrote down an equation
 
 #### My paragraph 
 
